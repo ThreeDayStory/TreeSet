@@ -14,27 +14,27 @@ import java.util.Collections;
 public class TreeSetUse {
 	public static void main(String args[]) {
 		
-		Scanner input = new Scanner(System.in);
-		String string; 
+	    Scanner input = new Scanner(System.in);
+	    String string; 
 		
-		System.out.println("Enter a sentence:");
-		string = input.nextLine();
+	    System.out.println("Enter a sentence:");
+	    string = input.nextLine();
 		
-		String[] words = string.split(" ");
+	    String[] words = string.split(" ");
 		
-		SortedSet<String> treeSet = new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);
+	    SortedSet<String> treeSet = new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);
 				
-		Collections.addAll(treeSet, words);
+	    Collections.addAll(treeSet, words);
 		
-		printSet(treeSet);
+	    printSet(treeSet);
 		
-		input.close();
+	    input.close();
 	}
 	
 	private static void printSet(SortedSet<String> treeSet) {
 		
-		for (String word : treeSet) {
-			System.out.printf("%s\n", word);
+	    for (String word : treeSet) {
+		    System.out.printf("%s\n", word);
 		}
 	}
 }
